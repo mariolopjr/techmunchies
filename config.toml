@@ -5,9 +5,9 @@ copyright = "© {year} techmunchies, inc"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-paginate = 12
+pagination.pagerSize = 12
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy"]
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
@@ -41,20 +41,6 @@ canonifyURLs = true
     title = "blog"
     url = "/blog/"
     weight = 20
-
-  [[menu.main]]
-    identifier = "projects"
-    name = "projects"
-    title = "projects"
-    url = "/projects/"
-    weight = 30
-
-  [[menu.main]]
-    identifier = "altstore"
-    name = "altstore"
-    title = "altstore"
-    url = "altstore://source?url=https://altstore.techmunchies.workers.dev"
-    weight = 40
 
 [markup]
   [markup.highlight]
