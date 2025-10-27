@@ -8,4 +8,22 @@ TODO: Cloudflare status
 
 ## Powered by the following amazing technology
  - [Cloudflare](https://www.cloudflare.com)
- - [Hugo](https://gohugo.io)
+ - [Zola](https://www.getzola.org)
+ - [Radion Theme](https://www.getzola.org/themes/radion/)
+
+## Development
+
+### Prerequisites
+- [Zola](https://www.getzola.org/documentation/getting-started/installation/) 0.19.2 or higher
+
+### Building the site
+
+```bash
+# Build the site
+zola build
+
+# Serve the site locally with live reload
+zola serve
+```
+
+The site will be available at `http://127.0.0.1:1111/`

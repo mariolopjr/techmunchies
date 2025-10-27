@@ -1,57 +1,54 @@
-baseURL = "https://techmunchies.net/"
+base_url = "https://techmunchies.net"
+compile_sass = true
 title = "techmunchies"
-theme = "tm"
-copyright = "© {year} techmunchies, inc"
+description = "Hi! I am Mario and this is my personal/company website."
+generate_feeds = true
 
-languageCode = "en-us"
-DefaultContentLanguage = "en"
-pagination.pagerSize = 12
+taxonomies = [
+    {name = "categories", feed = true},
+    {name = "tags", feed = true},
+]
 
-disableKinds = ["taxonomy"]
-enableEmoji = true
-enableGitInfo = true
-enableRobotsTXT = true
-canonifyURLs = true
+build_search_index = true
+theme = "radion"
 
-[params]
-  author = "Mario"
-  github = "https://github.com/mariolopjr"
-  facebook = ""
-  og_image = "/images/og.png"
-  sitename = "techmunchies"
-  twitter = "@mariolopjr"
+[markdown]
+highlight_code = true
+highlight_theme = "solarized-dark"
+insert_anchor_links = "heading"
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    languageCode = "en-us"
-    weight = 1
+[search]
+index_format = "elasticlunr_json"
 
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "home"
-    title = "home"
-    url = "/"
-    weight = 10
+[extra]
+author = "Mario"
+github = "https://github.com/mariolopjr"
+twitter = "@mariolopjr"
+radion_menu = [
+    {url = "$BASE_URL/", name = "home"},
+    {url = "$BASE_URL/blog", name = "blog"},
+    {url = "$BASE_URL/categories", name = "categories"},
+    {url = "$BASE_URL/tags", name = "tags"},
+]
+radion_title = "techmunchies"
 
-  [[menu.main]]
-    identifier = "blog"
-    name = "blog"
-    title = "blog"
-    url = "/blog/"
-    weight = 20
+# Nicer codeblocks with copy to clipboard
+codeblock = true
 
-[markup]
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineAnchors = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "solarized-dark"
-    tabWidth = 4
+# Enable MathJax support
+latex = false
+
+# Enable search bar
+enable_search = true
+
+# Light/Dark Mode set
+theme = "toggle"
+
+# Whether to display favicon
+favicon = true
+
+# Giscus comment support
+comments = false
+
+# Post revision history
+revision_history = false

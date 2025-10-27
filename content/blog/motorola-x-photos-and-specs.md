@@ -1,8 +1,8 @@
----
-title: Motorola X photos and specs
-date: '2013-07-21T09:39:12-04:00'
-description: Motorola X tweet
----
++++
+title = "Motorola X photos and specs"
+date = "2013-07-21T09:39:12-04:00"
+description = "Motorola X tweet"
++++
 Very interesting, unfortunately the CPU specs are a little behind, but if Motorola prices this phone right (in line with N4 off contract) then maybe they can turn things around.
 
 > Android Police (@androidpolice)

@@ -1,10 +1,8 @@
----
-title: 'Building a Fast Static Site: Part 1 - Optimize Post Images'
-date: '2016-08-01T09:51:19-04:00'
-description: >-
-  Building a fast static site (with Jekyll) can be daunting unless you know what
-  you're doing. These​ tutorial series help you create a successful, fast site!
----
++++
+title = "Building a Fast Static Site: Part 1 - Optimize Post Images"
+date = "2016-08-01T09:51:19-04:00"
+description = "Building a fast static site (with Jekyll) can be daunting unless you know what you're doing. These​ tutorial series help you create a successful, fast site!"
++++
 I've been wanting to automate my image optimization for this site. Normally, my workflow for uploading images for a blog post is as follows:
 
 1. Download image to Desktop

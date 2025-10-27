@@ -1,9 +1,8 @@
----
-title: 'Installing FreeBSD 9-RELEASE onto a ZFS root'
-date: '2013-07-20T20:20:10-04:00'
-description: >-
-  This tutorial will guide you through installing FreeBSD 9-RELEASE onto a ZFS root with UFS boot. We will also cover a small amount of post-install items to ensure your system is available for immediate use.
----
++++
+title = "Installing FreeBSD 9-RELEASE onto a ZFS root"
+date = "2013-07-20T20:20:10-04:00"
+description = "This tutorial will guide you through installing FreeBSD 9-RELEASE onto a ZFS root with UFS boot. We will also cover a small amount of post-install items to ensure your system is available for immediate use."
++++
 **Disclaimer**: This should work for you, but all systems are different. I have compiled this information from many sources and will include them at the bottom of this post. The reason I am creating this is because I feel as if the other sources do not “finish” the installation, so a new user would be oblivious as to what they should do next.
 
 ### Step 1: Download FreeBSD 9-RELEASE

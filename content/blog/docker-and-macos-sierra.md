@@ -1,8 +1,8 @@
----
-title: Docker and macOS Sierra
-date: '2016-07-17T09:48:00-04:00'
-description: Issues using Docker with macOS Sierra beta? Read on for a fix!
----
++++
+title = "Docker and macOS Sierra"
+date = "2016-07-17T09:48:00-04:00"
+description = "Issues using Docker with macOS Sierra beta? Read on for a fix!"
++++
 If you were feeling as adventurous as I was, then you decided to update one of your production Macs to macOS Sierra. That's OK, living on the bleeding edge has its issues, but we have cookies. :)
 
 However, it's been mostly smooth sailing, with the occasional slowness in Safari. A couple days ago, I noticed that after using the Docker for Mac beta for awhile, or putting my Mac to sleep, Docker would stop responding (and I rely quite heavily on using Docker as a replacement for everything, Jekyll, apache, nginx, etc.), and then all the development sites that Docker was server would stop responding.

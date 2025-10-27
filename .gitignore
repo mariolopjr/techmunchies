@@ -31,13 +31,6 @@ public
 # Folders to ignore
 node_modules
 
-### Hugo ###
-# Generated files by hugo
+### Zola ###
+# Generated files by Zola
 /public/
-/resources/_gen/
-hugo_stats.json
-
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux

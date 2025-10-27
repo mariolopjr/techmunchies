@@ -1,0 +1,55 @@
+name: Build and Deploy Zola Site
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.19.2
+      
+      - name: Build site
+        run: zola build
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zola-site
+          path: public/
+          retention-days: 7
+  
+  deploy-preview:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    needs: build
+    
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: zola-site
+          path: public/
+      
+      - name: Comment PR with preview info
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ Site built successfully! Download the artifact to preview the changes.'
+            })

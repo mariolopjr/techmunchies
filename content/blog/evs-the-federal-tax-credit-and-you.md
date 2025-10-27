@@ -1,11 +1,9 @@
----
-title: 'EVs, the Federal Tax Credit, and You'
-date: '2018-05-31T19:46:16-04:00'
-draft: true
-description: >-
-  I want to preface this with: I am not a tax professional, lawyer, etc. I am an
-  armchair EV enthusiast who likes to read. Take that for what it's worth. Hah!
----
++++
+title = "EVs, the Federal Tax Credit, and You"
+date = "2018-05-31T19:46:16-04:00"
+description = "I want to preface this with: I am not a tax professional, lawyer, etc. I am an armchair EV enthusiast who likes to read. Take that for what it's worth. Hah!"
+draft = true
++++
 EVs, the Federal Tax Credit, and You
 
 I want to preface this with: I am not a tax professional, lawyer, etc. I am an armchair EV enthusiast who likes to read. Take that for what it's worth. Hah!
