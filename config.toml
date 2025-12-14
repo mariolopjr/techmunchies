@@ -13,6 +13,11 @@ generate_feeds = true
 feed_filenames = ["rss.xml"]
 author = "mario"
 
+taxonomies = [
+    { name = "tags", feed = true },
+    { name = "categories", feed = true, paginate_by = 10 },
+]
+
 [markdown]
 highlight_code = true
 
@@ -24,6 +29,7 @@ show_default_author = false
 main_menu = [
     { name = "home", url = "@/_index.md", trailing_slash = true },
     { name = "thoughts", url = "@/thoughts/_index.md", trailing_slash = true },
+    { name = "tags", url = "tags", trailing_slash = true },
     # { name = "projects", url = "@/projects/_index.md", trailing_slash = true },
     # { name = "about", url = "@/about/_index.md", trailing_slash = true },
     # { name = "résumé", url = "resume.pdf", new_tab = true },
