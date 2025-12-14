@@ -1,57 +1,35 @@
-baseURL = "https://techmunchies.net/"
+base_url = "https://techmunchies.net"
+theme = "terminus"
+
 title = "techmunchies"
-theme = "tm"
-copyright = "© {year} techmunchies, inc"
+description = ""
 
-languageCode = "en-us"
-DefaultContentLanguage = "en"
-pagination.pagerSize = 12
+compile_sass = true
+minify_html = true
 
-disableKinds = ["taxonomy"]
-enableEmoji = true
-enableGitInfo = true
-enableRobotsTXT = true
-canonifyURLs = true
+build_search_index = true
+default_language = "en"
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+author = "mario"
 
-[params]
-  author = "Mario"
-  github = "https://github.com/mariolopjr"
-  facebook = ""
-  og_image = "/images/og.png"
-  sitename = "techmunchies"
-  twitter = "@mariolopjr"
+[markdown]
+highlight_code = true
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    languageCode = "en-us"
-    weight = 1
+[extra]
+copyright = "© $YEAR techmunchies :: <span>powered by <a target=\"_blank\" href=\"https://www.getzola.org\">zola</a></span> :: <span>theme by <a target=\"_blank\" href=\"https://eyalkalderon.com\">ebkalderon</a></span>"
+header_title = "techmunchies"
+show_default_author = false
 
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "home"
-    title = "home"
-    url = "/"
-    weight = 10
+main_menu = [
+    { name = "home", url = "@/_index.md", trailing_slash = true },
+    # { name = "about", url = "@/about/_index.md", trailing_slash = true },
+    # { name = "projects", url = "@/projects/_index.md", trailing_slash = true },
+    # { name = "résumé", url = "resume.pdf", new_tab = true },
+    { name = "rss", url = "rss.xml" },
+]
 
-  [[menu.main]]
-    identifier = "blog"
-    name = "blog"
-    title = "blog"
-    url = "/blog/"
-    weight = 20
-
-[markup]
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineAnchors = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "solarized-dark"
-    tabWidth = 4
+socials = [
+    { name = "github", url = "https://github.com/mariolopjr" },
+    # { name = "mastodon", url = "https://mastodon.org/@mariolopjr" },
+]
