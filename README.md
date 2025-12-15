@@ -1,11 +1,6 @@
 # techmunchies — [techmunchies.net](https://techmunchies.net)
 
-> Hi! I am Mario and this is my personal/company website. All opinions are my own, though I hope to have more of them... 🙄
-
-
-TODO: Cloudflare status
-
-
-## Powered by the following amazing technology
+## Powered by
  - [Cloudflare](https://www.cloudflare.com)
- - [Hugo](https://gohugo.io)
+ - [Zola](https://getzola.org)
+

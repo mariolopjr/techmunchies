@@ -1,9 +1,0 @@
-{{ define "main" }}
-  <main aria-role="main">
-    <div class="blog">
-      {{ range .Pages }}
-        {{ .Render "li"}}
-      {{ end }}
-    </div>
-  </main>
-{{ end }}
