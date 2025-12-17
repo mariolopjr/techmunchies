@@ -20,12 +20,15 @@ taxonomies = [
 
 [markdown]
 highlight_code = true
-highlight_theme = "monokai"
+extra_syntaxes_and_themes = ["highlight_themes"]
+highlight_theme = "catppuccin-macchiato"
 render_emoji = true
 bottom_footnotes = true
 github_alerts = true
 
 [extra]
+color_scheme = "catppuccin-macchiato"
+
 copyright = "© $YEAR techmunchies :: <span>powered by <a target=\"_blank\" href=\"https://www.getzola.org\">zola</a></span> :: <span>theme by <a target=\"_blank\" href=\"https://eyalkalderon.com\">ebkalderon</a></span>"
 header_title = "techmunchies"
 show_default_author = false
