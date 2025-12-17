@@ -20,7 +20,8 @@ taxonomies = [
 
 [markdown]
 highlight_code = true
-highlight_theme = "monokai"
+extra_syntaxes_and_themes = ["highlight_themes"]
+highlight_theme = "catppuccin-macchiato"
 render_emoji = true
 bottom_footnotes = true
 github_alerts = true
